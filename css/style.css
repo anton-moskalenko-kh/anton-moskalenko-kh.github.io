@@ -1,0 +1,1082 @@
+@charset "UTF-8";
+/* line 1, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/style.sass */
+* {
+  font-family: Roboto, sans-serif;
+}
+
+/* line 1, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+header {
+  position: relative;
+}
+
+/* line 3, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 53px;
+  background: #212121;
+  z-index: 5;
+}
+
+/* line 10, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 13, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 70px;
+  margin: 0;
+}
+
+/* line 18, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.menu_link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 24, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 27, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 87px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(53px);
+}
+
+/* line 33, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 19px;
+}
+
+/* line 37, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subheader_official {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+/* line 44, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subheader_call {
+  margin-top: 19px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+/* line 51, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 59, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+/* line 74, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bg.jpg") center center/cover no-repeat;
+  padding: 208px 0 186px 0;
+}
+
+/* line 78, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.promo_title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 52px;
+  margin: 0;
+}
+
+/* line 87, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.promo_subtitle {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+/* line 97, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.promo_text {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 105, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 116px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  border: none;
+}
+
+/* line 119, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.reasons {
+  padding: 18px 0 64px 0;
+}
+
+/* line 121, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.item {
+  display: flex;
+  padding-left: 21px;
+  margin-top: 30px;
+}
+
+/* line 125, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.item:nth-child(2n) {
+  padding-right: 31px;
+}
+
+/* line 127, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.advantage {
+  width: 115px;
+  height: 27px;
+  background: #000000;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 27px;
+}
+
+/* line 138, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+/* line 146, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.item_round {
+  min-width: 116px;
+  height: 116px;
+  background: #1EACC7;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+/* line 155, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.item_round img {
+  max-width: 80px;
+  max-height: 66px;
+}
+
+/* line 158, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.item_title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1EACC7;
+}
+
+/* line 163, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.item_text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  color: #202020;
+}
+
+/* line 170, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+  padding: 48px 0 80px 0;
+}
+
+/* line 174, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 30px;
+}
+
+/* line 176, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile .title {
+  margin-bottom: 0;
+}
+
+/* line 179, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #222222;
+  margin: 0 auto;
+}
+
+/* line 186, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin-bottom: 19px;
+}
+
+/* line 191, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/card_1.jpg") center center/cover no-repeat;
+}
+
+/* line 193, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/card_2.jpg") center center/cover no-repeat;
+}
+
+/* line 195, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/card_3.jpg") center center/cover no-repeat;
+}
+
+/* line 197, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/card_4.jpg") center center/cover no-repeat;
+}
+
+/* line 199, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/card_5.jpg") center center/cover no-repeat;
+}
+
+/* line 201, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/card_6.jpg") center center/cover no-repeat;
+}
+
+/* line 203, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item .item_header {
+  padding-top: 89px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* line 211, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.mobile_item .item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 29px;
+  height: 29px;
+  background: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 225, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 896px;
+  background: #070716;
+  padding: 57px 0 0 0;
+  z-index: -1;
+}
+
+/* line 232, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice .advantage {
+  background: #FFFFFF;
+  color: #070716;
+  cursor: pointer;
+}
+
+/* line 236, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice .title {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+/* line 239, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice .subtitle {
+  color: #FFFFFF;
+}
+
+/* line 241, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 54px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 246, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice_text {
+  position: relative;
+  text-align: center;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #222222;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* line 255, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.choice .light_bg {
+  position: absolute;
+  width: 100%;
+  min-height: 397px;
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+  transform: translateY(442px);
+  z-index: 1;
+}
+
+/* line 263, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require {
+  padding: 68px 0 59px 0;
+}
+
+/* line 265, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .title {
+  margin-bottom: 0;
+}
+
+/* line 267, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .require_block {
+  margin-top: 33px;
+  margin-bottom: 28px;
+}
+
+/* line 270, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .require_block .require_title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #1CA8C3;
+}
+
+/* line 275, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .require_block .require_list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+/* line 279, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .require_block .require_list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #222222;
+}
+
+/* line 285, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .require_block .require_list li::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check.png") center center/cover no-repeat;
+  left: -32px;
+  top: 3px;
+}
+
+/* line 295, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #FF5656;
+}
+
+/* line 299, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.require .warning .require_list li::before {
+  background: url("../icons/check_red.png") center center/cover no-repeat;
+}
+
+/* line 302, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.location {
+  position: relative;
+  padding: 48px 0 22px 0;
+  min-height: 716px;
+  background: url("../img/world_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 307, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.location .advantage {
+  width: 79px;
+  height: 27px;
+  background: #FFFFFF;
+  color: #070716;
+}
+
+/* line 312, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.location .title {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+/* line 315, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.location .location_subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 2px;
+}
+
+/* line 321, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.location .location_link {
+  display: block;
+  position: absolute;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  text-decoration: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* line 336, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 338, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+footer a {
+  text-decoration: none;
+}
+
+/* line 342, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 347, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 352, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 354, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 357, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 361, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 370, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 373, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 377, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 382, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 386, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 391, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 401, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+/* line 404, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+._icon-s-insta:before {
+  content: "\e903";
+  color: white;
+}
+
+/* line 408, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+._icon-s-linkedin:before {
+  content: "\e904";
+  color: white;
+}
+
+/* line 412, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_general.sass */
+._icon-s-twitter:before {
+  content: "\e905";
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo .promo_title {
+    font-size: 50px;
+  }
+  /* line 10, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item {
+    width: 300px;
+  }
+  /* line 12, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 16, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_wrapper div:first-child {
+    order: 2;
+  }
+  /* line 18, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_wrapper div:nth-child(2) {
+    order: 1;
+  }
+  /* line 20, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_wrapper div:last-child {
+    order: 3;
+  }
+  /* line 22, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 27, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 33, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 35, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 39, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 41, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 12px;
+  }
+  /* line 43, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 21px;
+  }
+  /* line 45, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_btn {
+    width: 157px;
+    height: 40px;
+    margin-top: 22px;
+  }
+  /* line 50, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo .promo_title {
+    font-size: 40px;
+  }
+  /* line 52, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo_subtitle {
+    font-size: 30px;
+  }
+  /* line 55, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .item {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 58, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .item_round {
+    width: 116px;
+  }
+  /* line 60, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .item_block {
+    margin-top: 20px;
+  }
+  /* line 62, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice {
+    min-height: 854px;
+  }
+  /* line 64, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice_img {
+    width: 700px;
+    height: 440px;
+  }
+  /* line 67, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice .light_bg {
+    transform: translateY(400px);
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 71, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    transition: 0.6s all;
+  }
+  /* line 82, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 84, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_item {
+    margin: 10px 0;
+    padding-right: 0;
+    border: none;
+  }
+  /* line 88, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 90, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 98, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 2px;
+    transition: 0.5s all;
+  }
+  /* line 106, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-top: -2px;
+  }
+  /* line 108, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 110, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 112, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 114, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 116, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5px;
+  }
+  /* line 124, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  /* line 132, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo .promo_title {
+    line-height: 46px;
+  }
+  /* line 137, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .item_block .item_title {
+    text-align: center;
+  }
+  /* line 139, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .item_round {
+    margin-right: 0;
+  }
+  /* line 142, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile .title {
+    font-size: 30px;
+  }
+  /* line 144, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item {
+    width: 100%;
+    height: 150px;
+  }
+  /* line 147, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item .item_header {
+    padding-top: 30px;
+  }
+  /* line 149, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item .item_plus {
+    bottom: 30px;
+  }
+  /* line 151, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice {
+    min-height: 754px;
+  }
+  /* line 153, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice .title {
+    font-size: 30px;
+  }
+  /* line 155, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice_img {
+    width: 500px;
+    height: 360px;
+  }
+  /* line 158, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice .light_bg {
+    transform: translateY(300px);
+  }
+  /* line 160, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .location {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 164, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader {
+    height: 62px;
+    transform: translateY(32px);
+  }
+  /* line 167, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 169, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+  }
+  /* line 171, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+  }
+  /* line 175, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 177, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  nav {
+    height: 32px;
+  }
+  /* line 179, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 135px 0 54px 0;
+  }
+  /* line 182, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo .promo_title {
+    font-size: 30px;
+    line-height: 35px;
+    padding: 0 13px;
+  }
+  /* line 186, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo_subtitle {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  /* line 189, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo_text {
+    display: none;
+  }
+  /* line 191, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 73px;
+  }
+  /* line 196, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons {
+    padding: 23px 0 38px 0;
+  }
+  /* line 198, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .item {
+    margin-top: 24px;
+  }
+  /* line 200, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .reasons .title {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  /* line 204, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile .title {
+    font-size: 16px;
+  }
+  /* line 206, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile .subtitle {
+    font-size: 14px;
+    margin-top: 9px;
+  }
+  /* line 209, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  /* line 214, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item .item_header {
+    padding: 80px 33px 0 31px;
+    font-size: 18px;
+  }
+  /* line 217, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .mobile_item_1 {
+    margin-top: 0;
+  }
+  /* line 219, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice {
+    min-height: 393px;
+    padding-top: 26px;
+  }
+  /* line 222, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice .light_bg {
+    display: none;
+  }
+  /* line 224, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice .title {
+    display: none;
+  }
+  /* line 226, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice .subtitle {
+    display: none;
+  }
+  /* line 228, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice_img {
+    width: 300px;
+    height: 190px;
+    margin-top: 36px;
+  }
+  /* line 232, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .choice_text {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 23px;
+  }
+  /* line 236, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .require {
+    padding: 22px 0 30px 0;
+  }
+  /* line 238, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .require .title {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  /* line 241, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .require .require_block {
+    margin-top: 30px;
+  }
+  /* line 243, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .require .require_block .require_title {
+    font-size: 16px;
+  }
+  /* line 245, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .require .require_block .require_list {
+    margin-top: 5px;
+  }
+  /* line 247, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .require .require_block .require_list li {
+    font-size: 14px;
+  }
+  /* line 249, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .location {
+    padding: 26px 0 22px 0;
+    min-height: 360px;
+  }
+  /* line 252, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .location .title {
+    font-size: 16px;
+    margin-top: 14px;
+  }
+  /* line 255, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .location .location_subtitle {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+  /* line 258, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .location .location_link {
+    font-size: 15px;
+    width: 100%;
+  }
+  /* line 262, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_links {
+    width: 290px;
+  }
+  /* line 264, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_links_main {
+    padding: 0;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /* line 270, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_links_main a {
+    padding: 5px;
+  }
+  /* line 272, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 275, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_links_sub a {
+    margin: 0 7px;
+  }
+  /* line 277, ../../../../../Users/antonmoskalenko/Documents/Тоша/Work/Курсы/Курс Udemy Верстка/Практика 2/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
